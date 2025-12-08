@@ -16,7 +16,7 @@ There are three access modifiers in C++:
 Public members are accessible from any part of the program. Outside of the class we can access the public members it can be like attributes and methods.
 
 Example:
-
+```
 Class Student{
     public:
         string name;
@@ -39,6 +39,7 @@ int main(){
 
     return 0;
 }
+```
     
 
 # Private
@@ -47,6 +48,7 @@ Private members are not accessible from outside of the class. They are only acce
 
 Example:
 
+```
 Class Student{
     private:
         string name;
@@ -54,9 +56,10 @@ Class Student{
         int roll;
         string grade;
 }
-
+```
 ### We cannot access private members from outside the class.
 
+```
 int main(){
     Student s1;
     s1.name = "Tasrik";
@@ -71,4 +74,36 @@ int main(){
 
     return 0;
 }
+```
+# Protected
+Protected members are similar to private members, but they can be accessed from derived classes. Protected members are not accessible from outside the class. They are only accessible from inside the class and derived classes.
 
+Example:
+
+```
+class Student{
+    protected:
+        string name;
+        int age;
+        int roll;
+        string grade;
+}
+```
+### We cannot access protected members from outside the class.
+
+```
+int main(){
+    Student s1;
+    s1.name = "Tasrik";
+    s1.age = 20;
+    s1.roll = 1;
+    s1.grade = "A";
+
+    cout << s1.name << endl;
+    cout << s1.age << endl;
+    cout << s1.roll << endl;
+    cout << s1.grade << endl;
+
+    return 0;
+}
+```
