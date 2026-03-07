@@ -21,9 +21,3 @@
 --> Static Memory Allocation is a process of allocating memory at compile time.
 
 --> Dynamic Memory Allocation is a process of allocating memory at runtime.
-
-#### What is the difference between static and dynamic memory allocation ?
-
---> Static Memory Allocation is a process of allocating memory at compile time.
-
---> Dynamic Memory Allocation is a process of allocating memory at runtime.
