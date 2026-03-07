@@ -18,11 +18,16 @@ public:
     this->accountNumber = accountNumber;
     this->balance = balance;
   }
+
+  void display() {
+    cout << this->name << " " << this->accountNumber << " " << this->balance << endl;
+  }
 };
 
 int main() {
   Customer A1;
   Customer B1("Tousif", 45679, 10000);
+  B1.display();
 }
 
 // Constructor dosen't have any return type
