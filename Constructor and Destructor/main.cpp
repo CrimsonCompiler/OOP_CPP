@@ -19,8 +19,15 @@ public:
     this->balance = balance;
   }
 
+  Customer(Customer &A) {
+    this->name = A.name;
+    this->accountNumber = A.accountNumber;
+    this->balance = A.balance;
+  }
+
   void display() {
-    cout << this->name << " " << this->accountNumber << " " << this->balance << endl;
+    cout << this->name << " " << this->accountNumber << " " << this->balance
+         << endl;
   }
 };
 
@@ -28,6 +35,8 @@ int main() {
   Customer A1;
   Customer B1("Tousif", 45679, 10000);
   B1.display();
+
+  Customer A2(A1);
 }
 
 // Constructor dosen't have any return type
