@@ -37,6 +37,9 @@ int main() {
   B1.display();
 
   Customer A2(A1);
+
+  Customer A4;
+  A4 = B1; // Assignment operator
 }
 
 // Constructor dosen't have any return type
